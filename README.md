@@ -6,7 +6,7 @@ To use this crate, simply replace `assert!(...)` by `soft::assert!()?`.
 
 ## Example
 
-```
+```rust
 fn main() {
     soft::assert!(true).unwrap();
     soft::assert!(false).unwrap_err();
