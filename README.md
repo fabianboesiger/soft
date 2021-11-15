@@ -8,6 +8,8 @@ To use this crate, simply replace `assert!(...)` by `soft::assert!(...)?`.
 
 ```rust
 fn main() {
+    soft::panic!(false).unwrap_err();
+
     soft::assert!(true).unwrap();
     soft::assert!(false).unwrap_err();
 
